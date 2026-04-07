@@ -2,8 +2,8 @@ const fs = require('fs');
 const axios = require('axios');
 
 const URLS = {
-    sheet1: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRjkerfUM4Af5iYw4IBlHSdQHRP61U18YAeNoKzL3_1-0GdiQdLtcPMeGgu_nhGqDMbnIaZBpvpfow6/pub?output=csv',
-    sheet2: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8hV7tT_22c1L85H_Lc0LRmL5NrQcpyuC_xlVK1u53NTjAXNqgPoVngczVuOY60DfOEMa_g9EpDl0J/pub?output=csv'
+    sheet1: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuGnGQb0WGZk5myNrkVF2d-OLRsAPEd8HY9PM-cVsuC5xiBDCN3tSrRaZWgUJqA2hQmFFHA3OiOWyb/pub?gid=1480034977&single=true&output=csv',
+    sheet2: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuEEqzyzg0p3rSb0wl1uAYlAZtjKAPg5Gy-k3BCgpjGNV2wZMUa1ZFKbYqSU6e3rMzfHWFlqRZkRvC/pub?gid=1676389275&single=true&output=csv'
 };
 
 function parseCSV(text) {
