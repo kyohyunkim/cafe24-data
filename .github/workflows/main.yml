@@ -2,33 +2,33 @@ name: Hourly Data Update
 
 on:
   schedule:
-    - cron: '0 * * * *' # 한국 시간 기준 매 정시(0분)마다 실행
-  workflow_dispatch:      # [Run workflow] 버튼을 통해 수동 실행도 가능하게 함
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 2026년 최신 v4 버전 사용 (Node.js 24 지원)
       - name: Checkout code
-        uses: actions/checkout@v3 # 깃허브에 올린 내 코드를 가져옴
+        uses: actions/checkout@v4 
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # 노드 환경 설치
+          node-version: '24' # 최신 노드 버전으로 업그레이드
 
       - name: Install dependencies
-        run: npm install # axios 등 필요한 라이브러리 설치
+        run: npm install
 
       - name: Run update script
-        run: node update.js # 우리가 만든 데이터를 긁어오는 스크립트 실행
+        run: node update.js
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
           git add data.json
-          # 아래 pull 명령어를 추가해서 충돌을 방지합니다.
-          git pull --rebase origin main 
+          # 충돌 방지를 위해 force push 사용
           git commit -m "Auto update data.json" || exit 0
-          git push
+          git push origin main --force
