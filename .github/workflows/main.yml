@@ -29,6 +29,5 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
           git add data.json
-          # 충돌 방지를 위해 force push 사용
-          git commit -m "Auto update data.json" || exit 0
-          git push origin main --force
+          # 변경사항이 있을 때만 커밋하고, 없으면 에러 없이 종료(exit 0)합니다.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update data.json" && git push origin main --force)
