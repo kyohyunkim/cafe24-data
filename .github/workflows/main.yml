@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 2026년 환경 변수 추가 (Node 24 강제 opt-in)
+    
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -31,13 +31,8 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
-          
-          # 1. 무조건 data.json만 콕 집어서 스테이징 합니다. (절대 git add . 사용 금지)
           git add data.json
-          
-          # 2. data.json 파일에만 변경사항이 있는지 엄격하게 검사합니다.
           if git diff --staged --quiet; then
-            echo "데이터가 이전과 완전히 동일합니다. 커밋을 건너뜁니다."
           else
             git commit -m "Auto update data.json"
             
