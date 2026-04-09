@@ -4,7 +4,7 @@ const axios = require('axios');
 const URLS = {
     // gid가 포함된 최종 CSV 주소로 교체하세요.
     sheet1: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuGnGQb0WGZk5myNrkVF2d-OLRsAPEd8HY9PM-cVsuC5xiBDCN3tSrRaZWgUJqA2hQmFFHA3OiOWyb/pub?output=csv',
-    sheet2: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8hV7tT_22c1L85H_Lc0LRmL5NrQcpyuC_xlVK1u53NTjAXNqgPoVngczVuOY60DfOEMa_g9EpDl0J/pub?output=csv'
+    sheet2: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuEEqzyzg0p3rSb0wl1uAYlAZtjKAPg5Gy-k3BCgpjGNV2wZMUa1ZFKbYqSU6e3rMzfHWFlqRZkRvC/pub?output=csv'
 };
 
 function parseCSV(text) {
