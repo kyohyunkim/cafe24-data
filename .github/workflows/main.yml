@@ -2,16 +2,16 @@ name: Hourly Data Update
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # 5분 주기
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # 2026년 환경 변수 설정
+    # 2026년 환경 변수 추가 (Node 24 강제 opt-in)
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4 
@@ -32,10 +32,10 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
           git add data.json
-          # 변경사항이 있을 때만 푸시하고, 없어도 에러(1)를 내지 않도록 처리
+          # 변경사항이 실제로 있을 때만 작업을 수행하여 에러 원천 차단
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Auto update data.json"
             git push origin main --force
           else
-            echo "No changes to commit"
+            echo "No changes detected. Skipping push."
           fi
