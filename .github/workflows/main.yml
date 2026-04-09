@@ -32,13 +32,11 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
           git add data.json
-          if git diff --staged --quiet; then
+          if git diff --staged --quiet
+          then
+            echo "No changes to commit"
           else
             git commit -m "Auto update data.json"
-            
-            
             git pull --rebase origin main
-            
-            
             git push origin main
           fi
