@@ -2,13 +2,12 @@ const fs = require('fs');
 const axios = require('axios');
 
 const URLS = {
-    // gid가 포함된 최종 CSV 주소로 교체하세요.
+    // CSV 주소
     sheet1: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuGnGQb0WGZk5myNrkVF2d-OLRsAPEd8HY9PM-cVsuC5xiBDCN3tSrRaZWgUJqA2hQmFFHA3OiOWyb/pub?output=csv',
     sheet2: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuEEqzyzg0p3rSb0wl1uAYlAZtjKAPg5Gy-k3BCgpjGNV2wZMUa1ZFKbYqSU6e3rMzfHWFlqRZkRvC/pub?output=csv'
 };
 
 function parseCSV(text) {
-    // 1. \r\n과 \n을 모두 대응하도록 수정 (중요!)
     const rows = text.split(/\r?\n/).filter(r => r.trim() !== '');
     return rows.map(row => {
         const result = [];
@@ -24,7 +23,6 @@ function parseCSV(text) {
             }
         }
         result.push(current);
-        // 2. 값의 앞뒤 공백 및 잔여 따옴표 완벽 제거
         return result.map(v => v.replace(/^"|"$/g, '').trim());
     });
 }
