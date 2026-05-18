@@ -244,25 +244,14 @@
     },
     {
       "date": "2026-06-07",
-      "prd_name": "오아드 립티크 12 color",
+      "prd_name": "오아드 립티크 12color",
       "origin": "26,000",
-      "sale_price": "24,700",
-      "percent": "5%",
-      "thum_url": "https://cdn.chicor.com/images/product/20250324095515440.png?d=600x0",
-      "channel": "chicor",
-      "link": "https://chicor.com/goods/0000000110584",
-      "tag": ""
-    },
-    {
-      "date": "2026-06-24",
-      "prd_name": "오아드 립티크 12 color",
-      "origin": "26,000",
-      "sale_price": "18,720",
+      "sale_price": "18,700",
       "percent": "28%",
-      "thum_url": "https://cdn.chicor.com/images/product/20250324095515440.png?d=600x0",
-      "channel": "chicor",
-      "link": "https://chicor.com/goods/0000000110584",
-      "tag": ""
+      "thum_url": "https://cf.product-image.s.zigzag.kr/original/d/2025/5/8/52226_202505080931170048_60527.png?width=720&height=720&quality=80&format=webp",
+      "channel": "zigzag",
+      "link": "https://zigzag.kr/catalog/products/161366919",
+      "tag": "무료배송"
     },
     {
       "date": "2026-07-01",
@@ -444,14 +433,14 @@
     },
     {
       "date": "2026-06-07",
-      "prd_name": "오아드 슬레인 하이퍼 글로우 틴트",
+      "prd_name": "오아드 슬레인 하이퍼 글로우 8color",
       "origin": "23,000",
-      "sale_price": "21,850",
-      "percent": "5%",
-      "thum_url": "https://cdn.chicor.com/images/product/20251226163037647.png?d=600x0",
-      "channel": "chicor",
-      "link": "https://chicor.com/goods/5100002004039",
-      "tag": "증정"
+      "sale_price": "16,900",
+      "percent": "26%",
+      "thum_url": "https://cf.product-image.s.zigzag.kr/original/d/2026/1/2/52226_202601021542180152_23947.jpeg?width=720&height=720&quality=80&format=webp",
+      "channel": "zigzag",
+      "link": "https://zigzag.kr/catalog/products/167898617",
+      "tag": "무료배송"
     },
     {
       "date": "2026-06-08",
@@ -466,14 +455,14 @@
     },
     {
       "date": "2026-06-30",
-      "prd_name": "오아드 슬레인 하이퍼 글로우 틴트",
+      "prd_name": "오아드 슬레인 하이퍼 글로우 8color",
       "origin": "23,000",
-      "sale_price": "21,850",
-      "percent": "5%",
-      "thum_url": "https://cdn.chicor.com/images/product/20251226163037647.png?d=600x0",
-      "channel": "chicor",
-      "link": "https://chicor.com/goods/5100002004039",
-      "tag": "증정"
+      "sale_price": "16,900",
+      "percent": "26%",
+      "thum_url": "https://cf.product-image.s.zigzag.kr/original/d/2026/1/2/52226_202601021542180152_23947.jpeg?width=720&height=720&quality=80&format=webp",
+      "channel": "zigzag",
+      "link": "https://zigzag.kr/catalog/products/167898617",
+      "tag": "무료배송"
     }
   ]
 }
