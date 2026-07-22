@@ -331,10 +331,21 @@
       "tag": "오늘드림,7월 올영픽"
     },
     {
-      "date": "2026-08-07",
+      "date": "2026-08-01",
       "prd_name": "[올영단독컬러/슬기PICK] 오아드 립티크 13종 단품/기획",
       "origin": "26,000",
       "sale_price": "18,140",
+      "percent": "30%",
+      "thum_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0024/A00000024091033ko.png?l=ko&QT=100&SF=webp&sharpen=1x0.5",
+      "channel": "oliveyoung",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000240910",
+      "tag": "오늘드림,8월 올영픽"
+    },
+    {
+      "date": "2026-08-07",
+      "prd_name": "[올영단독컬러/슬기PICK] 오아드 립티크 13종 단품/기획",
+      "origin": "26,000",
+      "sale_price": "18,100",
       "percent": "30%",
       "thum_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0024/A00000024091033ko.png?l=ko&QT=100&SF=webp&sharpen=1x0.5",
       "channel": "oliveyoung",
@@ -347,6 +358,17 @@
       "origin": "26,000",
       "sale_price": "18,330",
       "percent": "29%",
+      "thum_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0024/A00000024091033ko.png?l=ko&QT=100&SF=webp&sharpen=1x0.5",
+      "channel": "oliveyoung",
+      "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000240910",
+      "tag": "오늘드림,8월 올영픽"
+    },
+    {
+      "date": "2026-08-24",
+      "prd_name": "[올영단독컬러/슬기PICK] 오아드 립티크 13종 단품/기획",
+      "origin": "26,000",
+      "sale_price": "18,140",
+      "percent": "30%",
       "thum_url": "https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0024/A00000024091033ko.png?l=ko&QT=100&SF=webp&sharpen=1x0.5",
       "channel": "oliveyoung",
       "link": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000240910",
